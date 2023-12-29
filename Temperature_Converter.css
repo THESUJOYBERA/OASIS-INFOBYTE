@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    background: linear-gradient(90deg, #5936b4 0%, #362a84 100%);
+    color: #222;
+    font-size: 1rem;
+}
+
+.temperature-converter {
+    background: white;
+    width: 100%;
+    min-width: 370px;
+    padding: 20px 25px 45px;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 260px 0 rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    font-weight: 710;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: #974d2f;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.result-heading {
+    color: #526bcb;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.celsius-value {
+    border-bottom: 3px solid #ccc;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+label {
+    color: #036d68;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #cc2;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border: 2px solid #09d706;
+}
+
+option {
+    background: #3c39e7;
+    color: white;
+}
+
+#convert-btn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #0633db, #06dcdb);
+    color: white;
+    padding: 11px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all 0.4s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#convert-btn:hover
